@@ -1,0 +1,11 @@
+{
+  "name": "hackfest_backend_health_care",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hackfest_team",
+  "license": "ISC"
+}
