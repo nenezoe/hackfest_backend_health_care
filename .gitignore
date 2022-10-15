@@ -21,6 +21,8 @@ HackFestHealthCare/appsettings.json
 x64/
 x86/
 build/
+.env
+node_modules
 bld/
 [Bb]in/
 [Oo]bj/
