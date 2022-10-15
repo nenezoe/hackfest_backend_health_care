@@ -3,7 +3,7 @@
 project.lock.json
 .DS_Store
 *.pyc
-*appsettings.json
+HackFestHealthCare/appsettings.json
 # Visual Studio Code
 .vscode
 
