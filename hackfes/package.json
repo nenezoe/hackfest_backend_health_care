@@ -1,0 +1,20 @@
+{
+  "name": "hackfest",
+  "version": "1.0.0",
+  "description": "node_health_care_project",
+  "main": "index.js",
+  "scripts": {
+    "devstart": "nodemon index.js",
+    "start" : "npm run index.js"
+  },
+  "author": "Team_hackfest",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
