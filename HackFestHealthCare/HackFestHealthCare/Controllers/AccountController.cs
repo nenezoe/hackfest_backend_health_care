@@ -77,7 +77,7 @@ namespace HackFestHealthCare.Controllers
                         await _userManager.DeleteAsync(user);
                         throw new Exception(createResult.GetErrors());
                     }
-                    return Ok(new { code = 200, message = "Registration successful", succeeded = true });
+                    return Ok(DxResponse.Success(user));
                 }
                 return BadRequest(ModelState);
             }

@@ -47,4 +47,33 @@ namespace HackFestHealthCare.ViewModel
             };
         }
     }
+
+
+    public class DxResponseModel
+    {
+        public string ResponseCode { get; set; }
+        public string ResponseMessage { get; set; }
+        public string Exception { get; set; }
+        public Object Data { get; set; }
+
+        public DxResponseModel(string responseCode, string responseMsg, string exception, object data)
+        {
+            ResponseCode = responseCode;
+            ResponseMessage = responseMsg;
+            Exception = exception;
+            Data = data;
+        }
+    }
+
+    public class DxResponse
+    {
+        public static DxResponseModel Success(object data) =>
+            new DxResponseModel("00", "Successful", "", data);
+
+        public static DxResponseModel Failed(object data, string ex) =>
+            new DxResponseModel("01", "Failed", ex, data);
+
+        public static DxResponseModel SystemError(string ex, object data) =>
+            new DxResponseModel("91", "An error occured", ex, data);
+    }
 }
